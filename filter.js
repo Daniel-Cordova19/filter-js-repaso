@@ -2,18 +2,17 @@
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const evenNumbers = numbers.filter((num) => (num % 2) == 0);
-
 console.log("Números pares: ", evenNumbers); // Resultado esperado: [2, 4, 6, 8, 10]
 
 
 
 // Ejercicio 2: Filtrar cadenas de texto que contengan la letra guardada en la variable 'letter'
 const words = ["apple", "banana", "grape", "orange", "kiwi"];
-const letter = "a";
-const filteredWords = words.filter((word) => word);
+const letter = "k";
+const filteredWords = words.filter((word) => word.includes(letter) );
 console.log(
   "Palabras que contengan la letra de la variable letter: ",
-  filteredWords
+  filteredWords 
 ); // Resultado esperado: ['apple', 'banana', 'grape']
 
 // Ejercicio 2b: Filtrar cadenas de texto que NO contengan la letra guardada en la variable 'letter'
@@ -33,12 +32,12 @@ const products = [
   { name: "OnePlus", price: 600 },
 ];
 const affordableProducts = products.filter((product) => product);
-console.log("Teléfonos baratos: ", affordableProducts); // Resultado esperado: [{ name: 'Samsung Galaxy', price: 800 }, { name: 'Google Pixel', price: 700 }, { name: 'OnePlus', price: 600 }]
+//console.log("Teléfonos baratos: ", affordableProducts); // Resultado esperado: [{ name: 'Samsung Galaxy', price: 800 }, { name: 'Google Pixel', price: 700 }, { name: 'OnePlus', price: 600 }]
 
 // Ejercicio 5: Filtrar elementos que sean múltiplos de 3
 const numbers_3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const multiplesOfThree = numbers_3.filter((num) => num);
-console.log("Múltiplos de 3: ", multiplesOfThree); // Resultado esperado: [3, 6, 9]
+//console.log("Múltiplos de 3: ", multiplesOfThree); // Resultado esperado: [3, 6, 9]
 
 // Ejercicio 6: Filtra aquellos coches que son de la marca BMW y que además cuestan menos de 27000
 const cars = [
