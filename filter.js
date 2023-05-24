@@ -1,8 +1,11 @@
 // Ejercicio 1: Filtrar números pares
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evenNumbers = numbers.filter((num) => num);
+const evenNumbers = numbers.filter((num) => (num % 2) == 0);
+
 console.log("Números pares: ", evenNumbers); // Resultado esperado: [2, 4, 6, 8, 10]
+
+
 
 // Ejercicio 2: Filtrar cadenas de texto que contengan la letra guardada en la variable 'letter'
 const words = ["apple", "banana", "grape", "orange", "kiwi"];
